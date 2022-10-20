@@ -197,18 +197,144 @@ using namespace std;
 //    return 0;
 //}
 
-int main()
-{
-    int num = 0;;
-    cin >> num;
-    for (int i = 1; i <= num; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << i << "*" << j << "=" << i * j<<" ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
+//int main()//99乘法表
+//{
+//    int num = 0;;
+//    cin >> num;
+//    for (int i = 1; i <= num; i++)
+//    {
+//        for (int j = 1; j <= i; j++)
+//        {
+//            cout << j << " * " << i << " = " << i * j << "    ";
+//        }
+//        cout << endl;
+//    }
+//    return 0;
+//}
+
+//int main()//9到9999999999的和
+//{
+//    long long i = 0;
+//    long long sum = 0;
+//    for (i = 9; i <= 9999999999; i = i * 10 + 9)
+//    {
+//        sum += i;
+//    }
+//    cout << sum << endl;
+//    return 0;
+//}
+
+
+////实现选择排序
+//void selectionSort(int arr[], int n)
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		int minIndex = i;//寻找最小下标
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[j] < arr[minIndex])
+//				minIndex = j;//修改最小下标
+//		}
+//		swap(arr[i], arr[minIndex]);//调用swap函数交换数组元素
+//	}
+//}
+//int main()
+//{
+//	void selectionSort(int arr[], int n);
+//	int arr[] = { 9,5,7,2,7,9,23,21,4,1,0 };
+//	int length = sizeof(arr) / sizeof(int);//求数组长度
+//	selectionSort(arr, length);
+//	for (int i = 0; i < length; i++)
+//	{
+//		cout << arr[i] << " ";
+//	}
+//	return 0;
+//}
+
+
+
+////冒泡排序
+//void bubbleSort(int arr[], int n)
+//{
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = i + 1; j < n; j++)
+//		{
+//			if (arr[i] > arr[j])
+//				swap(arr[i], arr[j]);
+//		}
+//	}
+//}
+//int main()
+//{
+//	void bubbleSort(int arr[], int n);
+//	int arr[] = { 9,5,7,2,7,9,23,21,4,1,0 };
+//	int length = sizeof(arr) / sizeof(int);
+//	bubbleSort(arr, length);
+//	for (int i = 0; i < length; i++)
+//	{
+//		cout << arr[i] << " ";
+//	}
+//	return 0;
+//}
+
+
+////插入排序
+//void insertSort(int arr[], int n)
+//{
+//	for (int i = 1; i < n; i++)
+//	{
+//		int j = i - 1, key = arr[i];
+//		while (j >= 0 && arr[j] > key)
+//		{
+//			arr[j + 1] = arr[j];
+//			j--;
+//		}
+//		arr[j + 1] = key;
+//	}
+//}
+//int main()
+//{
+//	void insertSort(int arr[], int n);
+//	int arr[] = { 9,5,7,2,7,9,23,21,4,1,0 };
+//	int length = sizeof(arr) / sizeof(int);
+//	insertSort(arr, length);
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << arr[i] << " ";
+//	}
+//	return 0;
+//}
+
+
+////在数组中找出出现奇数次的数
+//int main()
+//{
+//	int arr[] = { 1,3,2,2,2,4,4,1,3 };//相同数异或得到0，偶数个异或得到的就是0，奇数个异或出来就是这个数
+//	int eor = 0;
+//	int length = sizeof(arr) / sizeof(int);
+//	for (int i = 0; i < length; i++)
+//	{
+//		eor ^= arr[i];
+//	}
+//	cout << eor << endl;
+//	return 0;
+//}
+
+
+////统计一个数二进制出现多少个1
+//int main()
+//{
+//	int num = 7; 
+//	int count = 0;
+//	while (num != 0)
+//	{
+//		int rightOne= num & (~num) + 1;
+//		count++;
+//		num ^= rightOne;
+//	}
+//	cout << count << endl;
+//	return 0;
+//}
 
