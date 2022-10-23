@@ -338,3 +338,66 @@ using namespace std;
 //	return 0;
 //}
 
+
+////输入六个数，寻找最大值和最小值
+//int main() {
+//    int arr[6] = { 0 };
+//    int length = sizeof(arr) / sizeof(int);
+//    for (int i = 0; i < length; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    for (int i = 0; i < 6; i++)
+//    {
+//        for (int j = i + 1; j < 6; j++)
+//        {
+//            if (arr[i] > arr[j])
+//                swap(arr[i], arr[j]);
+//        }
+//    }
+//    for (int i = 0; i < 6; i++)
+//        cout << arr[i]<<" ";
+//    cout << endl;
+//    cout << arr[0] << " " << arr[5] << endl;
+//    return 0;
+//}
+
+//判断一个数是否是质数
+//int main() {
+//    int num = 0;
+//    bool isPrime = true;
+//    cin >> num;
+//    //如果一个数能被2到根号x之间的任意一个数整除，则不是质数
+//    for (int i = 2; i <= sqrt(num); i++)//为输入数字判断是否为质数
+//    {
+//        if (num % i == 0)
+//            isPrime = false;
+//    }
+//    if (isPrime)//利用布尔值isprime判断输出
+//    {
+//        cout << "是质数" << endl;
+//    }
+//    else
+//    {
+//        cout << "不是质数" << endl;
+//    }
+//    return 0;
+//}
+
+//计算小球走过的距离和反弹总高度
+//int main()
+//{
+//    double high = 0, times = 0;
+//    cin >> high >> times;
+//    double all_high = 0;
+//    for (int i = 1; i <= times; i++)
+//    {
+//        all_high = all_high + high + high / 2.0;
+//        high = high / 2.0;
+//    }
+//    all_high = all_high - high;
+//    printf("%.1f %.1f", all_high, high);
+//    return 0;
+//}
+
+
