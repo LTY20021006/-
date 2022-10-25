@@ -401,3 +401,71 @@ using namespace std;
 //}
 
 
+//输入数组，反转元素
+//int main() {
+//    int arr[6] = { 0 };
+//    int len = sizeof(arr) / sizeof(int);
+//    for (int i = 0; i < len; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//
+//    cout << "[";
+//        for (int i = 0; i < len; i++)
+//        {
+//            if (i == len - 1)
+//            {
+//                cout << arr[i] << "]" << endl;
+//                break;
+//            }
+//            cout << arr[i] << ", ";
+//        }
+//
+//    int left = 0, right = 5;
+//    while (left < right)
+//    {
+//        int tmp = arr[left];
+//        arr[left] = arr[right];
+//        arr[right] = tmp;
+//        left++;
+//        right--;
+//    }
+//
+//    cout << "[";
+//    for (int i = 0; i < len; i++)
+//    {
+//        if (i == len - 1)
+//        {
+//            cout << arr[i] << "]" << endl;
+//            break;
+//        }
+//        cout << arr[i] << ", ";
+//    }
+//    return 0;
+//}
+
+
+//冒泡排序
+//int main() {
+//    int arr[6] = { 0 };
+//    int len = sizeof(arr) / sizeof(int);
+//    for (int i = 0; i < len; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    for (int i = 0; i < len; i++)
+//    {
+//        for (int j = i + 1; j < len; j++)
+//        {
+//            if (arr[i] > arr[j])
+//                swap(arr[i], arr[j]);
+//        }
+//    }
+//    for (int i = 0; i < len; i++)
+//    {
+//        cout << arr[i] << " ";
+//    }
+//    return 0;
+//}
+
+
