@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.MAIN-header{
+    height: 30px;
+    width: 100%;
+    background: white;
+}
+.MAIN-li:hover{
+    color: dimgray;
+    background: #393f52;
+}
+nav ul{
+    width: 1560px;
+}
+
+ul li{
+    margin: 20px;
+    height: 30px;
+    float: left;
+    line-height: 40px;
+    cursor:pointer;
+    font-size: 20px;
+    text-align: center;
+}
+

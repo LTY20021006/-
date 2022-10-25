@@ -1,0 +1,17 @@
+p{
+    text-align: center
+}
+
+.P-text{
+    text-transform: capitalize;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: help;
+}
+/*图片自适应*/
+img{
+    background-size: contain|cover;
+    width: 100%;
+    height: auto;
+}
