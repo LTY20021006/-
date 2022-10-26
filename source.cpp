@@ -1,5 +1,7 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
 #include <iostream>
+#include <string>
+#include <math.h>
 using namespace std;
 //int main()//输出数据类型占据字节数
 //{
@@ -462,6 +464,134 @@ using namespace std;
 //        }
 //    }
 //    for (int i = 0; i < len; i++)
+//    {
+//        cout << arr[i] << " ";
+//    }
+//    return 0;
+//}
+
+
+////字符串链接
+//int main() {
+//    string s1, s2;
+//    getline(cin, s1);//getline函数读取字符串
+//    getline(cin, s2);
+//    s1 = s1 + s2;//字符串相加
+//    cout << s1 << endl;
+//}
+
+
+//结构体测试
+//struct stu {
+//    string name = "0";
+//    int age = 0;
+//    float heigh = 0.0f;
+//};
+//int main() {
+//    stu st;//结构体变量st
+//    cin >> st.name >> st.age >> st.heigh;
+//    cout << st.name << " " << st.age << " " << st.heigh << endl;
+//}
+
+
+//指针遍历数组
+//int main() {
+//    int arr[6] = { 0 };
+//    int len = sizeof(arr) / sizeof(int);
+//    for (int i = 0; i < len; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    int* ptr = arr;
+//    for (int j = 0; j < len; j++)
+//    {
+//        cout << *(ptr + j) << " ";//ptr读取后面元素
+//    }
+//    return 0;
+//}
+
+//字符指针计算字符串长度
+//int main() {
+//    char str[100] = { 0 };
+//    cin.getline(str, sizeof(str));
+//
+//    int count = 0;
+//    char* ptr = str;
+//    while (*ptr != '\0')
+//    {
+//        ptr++;
+//        count++;
+//    }
+//    cout << count << endl;
+//    return 0;
+//}
+
+
+//复制指定位置的字符串
+//int main() {
+//    char str[30] = { 0 };
+//    cin.getline(str, sizeof(str));
+//
+//    int des = 0;
+//    cin >> des;
+//
+//    char str1[30] = { 0 };
+//    int len = 0;
+//    while (str[des - 1] != '\0')
+//    {
+//        str1[len++] = str[des - 1];
+//        des++;
+//    }
+//    str1[len] = '\0';
+//    cout << str1 << endl;
+//    return 0;
+//}
+
+
+
+////创建动态数组
+//int main() {
+//    int num = 0;
+//    cin >> num;
+//    int len = num;
+//
+//    int* ptr = new int[num];//申请整型变量空间，大小为num
+//    for (int i = 0; i < num; i++)
+//    {
+//        ptr[i] = num + i;
+//    }
+//    for (int i = 0; i < num; i++)
+//    {
+//        cout << ptr[i] << " ";
+//    }
+//}
+
+
+//函数实现数组中的0全部后移，其他顺序不变
+//void func(int* p, int n)//双指针
+//{
+//    int des = 0;
+//    for (int i = 0; i < n; i++)
+//    {
+//        if (p[i] != 0)
+//        {
+//            int tmp = p[i];
+//            p[i] = p[des];
+//            p[des++] = tmp;
+//        }
+//    }
+//}
+//int main() {
+//    void func(int* p, int n);
+//    int arr[6] = { 0 };
+//    int len = sizeof(arr) / sizeof(int);
+//    for (int i = 0; i < 6; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    int* ptr = arr;
+//    func(ptr, len);
+//    for (int i = 0; i < 6; i++)
 //    {
 //        cout << arr[i] << " ";
 //    }
