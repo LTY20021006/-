@@ -599,3 +599,44 @@ using namespace std;
 //}
 
 
+//自己实现strcmp函数
+//int mystrcmp(const char* src, const char* dst)
+//{
+//    int ans = 0;
+//    int len1 = strlen(src);
+//    int len2 = strlen(dst);
+//    int countSRC1 = 0, countDST1 = 0;
+//    for (int i = 0; i < len1; i++)
+//    {
+//        src++;
+//        countSRC1++;
+//    }
+//    for (int j = 0; j < len2; j++)
+//    {
+//        dst++;
+//        countDST1++;
+//    }
+//    if (countSRC1 > countDST1)
+//    {
+//        return 1;
+//    }
+//    if (countSRC1 < countDST1)
+//    {
+//        return -1;
+//    }
+//    if (countSRC1 == countDST1)
+//    {
+//        return 0;
+//    }
+//}
+//int main() {
+//    int mystrcmp(const char* src, const char* dst);
+//    char str1[100], str2[100];
+//    cin.getline(str1, sizeof(str1));
+//    cin.getline(str2, sizeof(str2));
+//    int ans = mystrcmp(str1, str2);
+//    cout << ans << endl;
+//    return 0;
+//}
+
+
