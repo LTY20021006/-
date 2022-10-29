@@ -640,3 +640,87 @@ using namespace std;
 //}
 
 
+//实现自己的swap函数
+//void myswap(int* ptr1, int* ptr2)
+//{
+//    int tmp = *ptr1;
+//    *ptr1 = *ptr2;
+//    *ptr2 = tmp;
+//    cout << *ptr1 << " " << *ptr2 << endl;
+//}
+//int main() {
+//    void myswap(int* ptr1, int* ptr2);
+//    int num1 = 0, num2 = 0;
+//    cin >> num1 >> num2;
+//    int* ptr1 = &num1;
+//    int* ptr2 = &num2;
+//    myswap(ptr1, ptr2);
+//    return 0;
+//}
+
+
+
+//统计子串出现的次数
+//int main()
+//{
+//    char str[100] = { 0 };
+//    char substr[100] = { 0 };
+//    cin.getline(str, sizeof(str));
+//    cin.getline(substr, sizeof(substr));
+//    int count = 0;
+//    string str1(str);//将char数组转换为字符串，以便find函数使用
+//    string str2(substr);
+//    int i = 0;
+//    while (str1.find(str2, i) != -1)//用find函数寻找与substr配对的字符串,找到后计数
+//    {
+//        count++;
+//        i = str1.find(str2, i) + 1;
+//    }
+//    cout << count << endl;
+//    return 0;
+//}
+
+
+//字符串统计各种字符出现次数
+//int main() {
+//    string str = "0";
+//    getline(cin, str);
+//    int whitespace = 0;
+//    int digits = 0;
+//    int chars = 0;
+//    int others = 0;
+//
+//    for (int i = 0; i < str.length(); i++)
+//    {
+//        if (isalpha(str[i]))
+//            chars++;
+//        else if (isdigit(str[i]))
+//            digits++;
+//        else if (isspace(str[i]))
+//            whitespace++;
+//        else
+//            others++;
+//    }
+//    cout << "chars : " << chars << " ";
+//    cout << "whitespace : " << whitespace << " ";
+//    cout << "digits : " << digits << " ";
+//    cout << "others : " << others << " " << endl;
+//}
+
+
+
+//递归实现求某数阶乘
+//long long factorial(int n)
+//{
+//    if (n == 1)
+//        return 1;
+//    else
+//        return factorial(n - 1) * n;
+//}
+//int main() {
+//    long long factorial(int n);
+//    int num = 0;
+//    cin >> num;
+//    cout << factorial(num) << endl;
+//    return 0;
+//}
