@@ -724,3 +724,41 @@ using namespace std;
 //    cout << factorial(num) << endl;
 //    return 0;
 //}
+
+
+////递归斐波那契数列
+//int getSum(int num)
+//{
+//    if (num == 1 || num == 2)
+//        return 1;
+//    else
+//        return getSum(num - 1) + getSum(num - 2);
+//}
+//int main() {
+//    int getSum(int num);
+//    int n = 0;
+//    cin >> n;
+//    cout << getSum(n) << endl;
+//    return 0;
+//}
+
+
+//函数内指针方法交换两数
+//void swap(int* ptr1, int* ptr2)
+//{
+//    int tmp = *ptr1;
+//    *ptr1 = *ptr2;
+//    *ptr2 = tmp;
+//}
+//int main() {
+//    void swap(int* ptr1, int* ptr2);
+//    int num1, num2;
+//    cin >> num1 >> num2;
+//    int* ptr1 = &num1;
+//    int* ptr2 = &num2;
+//    swap(ptr1, ptr2);
+//    cout << num1 << " " << num2 << endl;
+//}
+
+
+
